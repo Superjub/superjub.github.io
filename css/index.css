@@ -1,19 +1,21 @@
 body {
 	background-color: rgb(20, 42, 55);
-	background-image: url('../images/site_banner.png');
+	/* background-image: url('../images/site_banner.png');
 	background-size: 1000px auto;
 	background-position: center top;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 	color: rgb(200, 200, 200);
 	align-items: center;
 	font-family: 'Hind', sans-serif;
+
+	padding-top: 350px;
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
 	max-width: 1000px;
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
 	text-align: center;
 }
 
@@ -33,11 +35,16 @@ h3 {
 
 hr {
 	width: 100%;
-	opacity: 0.5; 
+	border: 1px solid rgba(250, 250, 250, 0.5);
+}
+
+.sections hr {
+	margin-bottom: 50px;
+	width: 10%;
 }
 
 nav {
-	margin: 150px 0 20px 0;
+	margin: 50px 0 0 0;
 	width: 100%;
 	border-top: 1px solid rgba(250, 250, 250, 0.5);
 	border-bottom: 1px solid rgba(250, 250, 250, 0.5);
@@ -56,11 +63,25 @@ nav a:hover {
 }
 
 .header-div {
-	width: 100%;
-	height: auto;
+	max-width: 1000px;
+	height: 250px;
 	display: flex;
 	flex-direction: column;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	margin: 0 auto 0 auto;
+	padding: 20px;
 
+	background-color: rgb(20, 42, 55);
+	background-image: url('../images/site_banner.png');
+	background-size: 700px auto;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+}
+
+.sections {
 }
 
 .small-print {
@@ -71,6 +92,9 @@ nav a:hover {
 footer {
 	font-family: 'Julius Sans One', sans-serif;
 	font-size: 0.8em;
+	background-color: rgb(20, 42, 55);
+	margin: 10px;
+	
 }
 
 .bio {
