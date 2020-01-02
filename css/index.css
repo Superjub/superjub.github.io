@@ -228,8 +228,8 @@ footer {
 		flex-direction: column;
 	}
 	hr {
-		margin-top: 0.6rem;
-		margin-bottom: 0.6rem;
+		margin-top: 8px;
+		margin-bottom: 8px;
 	}
 	h1 {
 		font-size: 16px;
@@ -269,8 +269,8 @@ footer {
 		flex-direction: column;
 	}
 	hr {
-		margin-top: 0.6rem;
-		margin-bottom: 0.6rem;
+		margin-top: 8px;
+		margin-bottom: 8px;
 	}
 	h1 {
 		font-size: 18px;
@@ -310,8 +310,8 @@ footer {
 		flex-direction: row;
 	}
 	hr {
-		margin-top: 0.8rem;
-		margin-bottom: 0.8rem;
+		margin-top: 12px;
+		margin-bottom: 12px;
 	}
 	h1 {
 		font-size: 22px;
