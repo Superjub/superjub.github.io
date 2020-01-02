@@ -26,13 +26,13 @@
 			<a href="#bio">BIO</a>
 			<a href="#portfolio">PORTFOLIO</a>
 			<a href="#cv">CV</a>
-			<a href="#contact">Contact Me</a>
+			<a href="#contact">CONTACT ME</a>
 		</nav>
 	</div>
 	<div class="sections">
 		<div id="bio">
 			<h2>Bio</h3>
-			<p>Birmingham City University graduate from the United Kingdom with a 2.1 qualification (with honours) in Computer Games Technology.</p>
+			<p>Birmingham City University graduate from the United Kingdom with a 2.1 qualification (with honours) in Computer Games Technology. Currently employed for Semantic Audio Labs Ltd.</p>
 		</div>
 		<hr />
 
@@ -42,7 +42,7 @@
 			<div id="portfolio-container" ng-controller="portfolio">
 				<div class="project" ng-repeat="project in projects">
 					<div class="header"><h2>{{project.name}}</h2></div>
-					<div class="body">
+					<div class="body" title="{{project.description}}">
 						<img src="{{project.image_url}}"/>
 					</div>
 					<div class="footer">
@@ -67,7 +67,7 @@
 		<div id="contact">
 			<h2>Contact</h3>
 
-			For all busines enquiries email bcpick1995@gmail.com
+			<p>For all busines enquiries, email me at bcpick1995@gmail.com</p>
 
 			<div style="display: flex; flex-direction: row; align-items: center; justify-content: space-around; width: 300px; margin: auto">
 				<a class="da-button" href="https://www.deviantart.com/superjub">
@@ -85,7 +85,7 @@
 		</div>
 	</div>
 	<footer>
-		&copy; 2018-2019 Bradley Pick
+		&copy; 2018-2020 Bradley Pick
 	</footer>
 </body>
 </html>

@@ -1,8 +1,7 @@
 var AngularInterface = angular.module("app", []);
 
 AngularInterface.controller("window", ['$scope', '$element', '$window', '$rootScope', function ($s, $e, $w, $root) {
-
-    console.log("test");
+    console.log('Angular instantiated (test)');
 }]);
 
 AngularInterface.controller("portfolio", ['$scope', '$element', '$window', '$rootScope', function ($s, $e, $w, $root) {
