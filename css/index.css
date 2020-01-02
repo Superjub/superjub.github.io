@@ -16,20 +16,17 @@ body {
 	align-items: center;
 	font-family: 'Hind', sans-serif;
 	text-align: center;
-	margin: 0 100px 0 100px !important;
-	padding: 250px 0 200px 0;
+	margin-bottom: 30px !important;
 }
 
 h1 {
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 2em;
 	text-shadow: 0 2.5px 2.5px rgb(150, 150, 150);
 	color: rgb(250, 250, 250);
 }
 
 h3 {
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 1.2em;
 	/* text-shadow: 0 2.5px 2.5px rgb(150, 150, 150);	 */
 	color: rgb(250, 250, 250);
 }
@@ -152,7 +149,6 @@ footer {
 #portfolio-container .project .header h2 {
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 24px;
 	/* background-color: red; */
 	vertical-align: middle;
 	margin: auto;
@@ -189,6 +185,7 @@ footer {
 	display: flex;
 	border-radius: 0;
 	justify-content: center;
+	text-align: center;
 }
 
 #portfolio-container .project .footer button.disabled {
@@ -212,6 +209,154 @@ footer {
 	border-radius: 0 0 15px 0;
 }
 
+/* media */
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+	body {
+		margin: 10px 0 10px;
+		padding: 50px 0 25px 0;
+	}
+	h1 {
+		font-size: 16px;
+		font-weight: bold;
+	}
+	h2 {
+		font-size: 16px;
+	}
+	h3 {
+		font-size: 12px;
+	}
+	#portfolio-container .project {
+		height: 200px;
+		width: 200px;
+	}
+	#portfolio-container .project button {
+		font-size: 12px;
+	}
+
+	#contact a {
+		width: 30px;
+		height: 30px;
+	}
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+	body {
+		margin: 0 25px 0 25px;
+		padding: 100px 0 75px 0;
+	}
+	h1 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 14px;
+	}
+	#portfolio-container .project {
+		height: 200px;
+		width: 200px;
+	}
+	#portfolio-container .project button {
+		font-size: 12px;
+	}
+
+	#contact a {
+		width: 30px;
+		height: 30px;
+	}
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+	body {
+		margin: 0 50px 0 50px;
+		padding: 200px 0 150px 0;
+	}
+	h1 {
+		font-size: 22px;
+		font-weight: bold;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	#portfolio-container .project {
+		height: 250px;
+		width: 250px;
+	}
+	#portfolio-container .project button {
+		font-size: 14px;
+	}
+
+	#contact a {
+		width: 42px;
+		height: 42px;
+	}
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+	body {
+		margin: 0 100px 0 100px;
+		padding: 250px 0 200px 0;
+	}
+	h1 {
+		font-size: 26px;
+		font-weight: bold;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	#portfolio-container .project {
+		height: 300px;
+		width: 300px;
+	}
+	#portfolio-container .project button {
+		font-size: 16px;
+	}
+	#contact a {
+		width: 50px;
+		height: 50px;
+	}
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+	 body {
+		margin: 0 200px 0 200px;
+		padding: 400px 0 300px 0;
+	 }
+	 h1 {
+		font-size: 28px;
+		font-weight: bold;
+	 }
+	 h2 {
+		 font-size: 26px;
+	 }
+	 h3 {
+		 font-size: 18px;
+	 }
+	 #portfolio-container .project {
+		height: 300px;
+		width: 300px;
+	}
+	#portfolio-container .project button {
+		font-size: 16px;
+	}
+	#contact a {
+		width: 50px;
+		height: 50px;
+	}
+ } 
 
 
 
