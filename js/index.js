@@ -23,6 +23,5 @@ AngularInterface.controller("portfolio", ['$scope', '$element', '$window', '$roo
         }
     }
 
-
 }]);
 
