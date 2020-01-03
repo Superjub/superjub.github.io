@@ -1,7 +1,12 @@
 var AngularInterface = angular.module("app", []);
 
 AngularInterface.controller("window", ['$scope', '$element', '$window', '$rootScope', function ($s, $e, $w, $root) {
-    console.log('Angular instantiated (test)');
+    let navbarHeight = $e[0].querySelector('#header-banner').offsetHeight;
+    $s.scrollToElement = function(id) {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top - (navbarHeight + 40)
+        }, 100);
+    }
 }]);
 
 AngularInterface.controller("portfolio", ['$scope', '$element', '$window', '$rootScope', function ($s, $e, $w, $root) {

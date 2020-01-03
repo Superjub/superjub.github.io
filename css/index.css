@@ -67,7 +67,7 @@ nav a:hover {
 	
 }
 
-.header-div {
+#header-banner {
 	/* max-width: 1000px; */
 	height: 200px;
 	display: flex;

@@ -18,16 +18,16 @@
 	<script src="js/index.js"></script>
 </head>
 <body ng-app="app" ng-controller="window">
-	<div class="header-div fixed-top">
+	<div id="header-banner" class="fixed-top">
 		<hr style="width: 50%"/>
 		<h1>Bradley Pick</h1>
 		<h3>Game Designer - Web Designer - Pixel Artist</h3>
 		<hr style="width: 50%"/>
 		<nav>
-			<a href="#bio">BIO</a>
-			<a href="#portfolio">PORTFOLIO</a>
-			<a href="#cv">CV</a>
-			<a href="#contact">CONTACT ME</a>
+			<a href="" ng-click="scrollToElement('#bio')">BIO</a>
+			<a href="" ng-click="scrollToElement('#portfolio')">PORTFOLIO</a>
+			<a href="" ng-click="scrollToElement('#cv')">CV</a>
+			<a href="" ng-click="scrollToElement('#contact')">CONTACT ME</a>
 		</nav>
 	</div>
 	<div class="sections">
@@ -40,7 +40,7 @@
 		<div id="portfolio">
 			<h2>Portfolio</h3>
 
-			<div id="portfolio-container" ng-controller="portfolio">
+			<div id="portfolio-container" ng-controller="portfolio" ng-cloak>
 				<div class="project" ng-repeat="project in projects">
 					<div class="header"><h2>{{project.name}}</h2></div>
 					<div class="body" title="{{project.description}}">
