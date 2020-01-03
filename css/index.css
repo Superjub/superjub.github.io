@@ -246,6 +246,7 @@ footer {
   width: 100%;
   /* background-color: red; */
   display: flex;
+  white-space: nowrap;
 }
 .sections #portfolio #portfolio-container .project .header h2 {
   font-weight: bold;
@@ -256,7 +257,7 @@ footer {
   color: white;
   font-family: 'Julius Sans One', sans-serif;
 }
-.sections #portfolio #portfolio-container .project .body {
+.sections #portfolio #portfolio-container .project .project-body {
   height: 70%;
   width: 100%;
   overflow: hidden;
@@ -268,12 +269,12 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
 }
-.sections #portfolio #portfolio-container .project .body img {
+.sections #portfolio #portfolio-container .project .project-body img {
   width: 100%;
   height: auto;
   opacity: 0.9;
 }
-.sections #portfolio #portfolio-container .project .body .project-desc {
+.sections #portfolio #portfolio-container .project .project-body .project-desc {
   position: absolute;
   top: 0;
   left: 0;
@@ -282,18 +283,21 @@ footer {
   background: rgba(0, 0, 0, 0.3);
   display: flex;
 }
-.sections #portfolio #portfolio-container .project .body .project-desc span {
+.sections #portfolio #portfolio-container .project .project-body .project-desc span {
   margin: auto;
   color: white;
   font-size: 12px;
 }
 @media only screen and (max-width: 600px) {
   /* Extra small devices (phones, 600px and down) */
-  #portfolio-container .project {
+  #profolio-container {
+    flex-direction: column;
+  }
+  #profolio-container .project {
     height: 200px;
     width: 200px;
   }
-  #portfolio-container .project button {
+  #profolio-container .project button {
     font-size: 12px;
   }
   #contact a {
@@ -303,11 +307,14 @@ footer {
 }
 @media only screen and (min-width: 600px) {
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  #portfolio-container .project {
+  #profolio-container {
+    flex-direction: column;
+  }
+  #profolio-container .project {
     height: 200px;
     width: 200px;
   }
-  #portfolio-container .project button {
+  #profolio-container .project button {
     font-size: 12px;
   }
   #contact a {
@@ -317,11 +324,14 @@ footer {
 }
 @media only screen and (min-width: 768px) {
   /* Medium devices (landscape tablets, 768px and up) */
-  #portfolio-container .project {
+  #profolio-container {
+    flex-direction: row;
+  }
+  #profolio-container .project {
     height: 250px;
     width: 250px;
   }
-  #portfolio-container .project button {
+  #profolio-container .project button {
     font-size: 14px;
   }
   #contact a {
@@ -331,11 +341,14 @@ footer {
 }
 @media only screen and (min-width: 992px) {
   /* Large devices (laptops/desktops, 992px and up) */
-  #portfolio-container .project {
+  #profolio-container {
+    flex-direction: row;
+  }
+  #profolio-container .project {
     height: 300px;
     width: 300px;
   }
-  #portfolio-container .project button {
+  #profolio-container .project button {
     font-size: 16px;
   }
   #contact a {
@@ -345,11 +358,14 @@ footer {
 }
 @media only screen and (min-width: 1200px) {
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  #portfolio-container .project {
+  #profolio-container {
+    flex-direction: row;
+  }
+  #profolio-container .project {
     height: 300px;
     width: 300px;
   }
-  #portfolio-container .project button {
+  #profolio-container .project button {
     font-size: 16px;
   }
   #contact a {
