@@ -231,11 +231,9 @@ footer {
   justify-content: center;
 }
 .sections #portfolio #portfolio-container .project {
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   margin: 20px;
   padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
   opacity: 0.7;
   transition: opacity 0.5s;
 }
@@ -266,43 +264,28 @@ footer {
   -webkit-box-shadow: inset 0px 0px 20px 10px #000000;
   -moz-box-shadow: inset 0px 0px 20px 10px #000000;
   box-shadow: inset 0px 0px 20px 10px #000000;
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
 }
 .sections #portfolio #portfolio-container .project .body img {
   width: 100%;
   height: auto;
   opacity: 0.9;
 }
-.sections #portfolio #portfolio-container .project .footer {
-  height: 15%;
+.sections #portfolio #portfolio-container .project .body .project-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  /* background-color: blue; */
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
-  flex-direction: row;
 }
-.sections #portfolio #portfolio-container .project .footer button {
-  flex: 1 1 0;
-  display: flex;
-  border-radius: 0;
-  justify-content: center;
-  text-align: center;
-}
-.sections #portfolio #portfolio-container .project .footer button:first-child {
-  flex: 1 1 0;
-  display: flex;
-  border-radius: 0 0 0 15px;
-}
-.sections #portfolio #portfolio-container .project .footer button:last-child {
-  flex: 1 1 0;
-  display: flex;
-  border-radius: 0 0 15px 0;
-}
-.sections #portfolio #portfolio-container .project .footer button.disabled {
-  cursor: not-allowed;
-}
-.sections #portfolio #portfolio-container .project .footer button.disabled:focus {
-  background-color: #32487d !important;
-  color: #c8c8c8 !important;
+.sections #portfolio #portfolio-container .project .body .project-desc span {
+  margin: auto;
+  color: white;
+  font-size: 12px;
 }
 @media only screen and (max-width: 600px) {
   /* Extra small devices (phones, 600px and down) */

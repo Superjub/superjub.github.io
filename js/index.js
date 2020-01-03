@@ -15,6 +15,12 @@ AngularInterface.controller("portfolio", ['$scope', '$element', '$window', '$roo
         image_url: 'images/posession-screenshot.png',
         description: 'Posession is an eery RPG where you play as a young female protagonist in strange circumstances.',
         download_url: null
+    },
+    {
+        name: 'Clown Calamity',
+        image_url: '',
+        description: 'Clown Calamity is a vehicle-based game where you dodge wacky obstacles while surviving as long as possible.',
+        download_url: null
     }];
 
     $s.download = function ($event, project) {
@@ -22,6 +28,10 @@ AngularInterface.controller("portfolio", ['$scope', '$element', '$window', '$roo
 
         }
     }
+
+}]);
+
+AngularInterface.controller("project", ['$scope', '$element', '$window', '$rootScope', function ($s, $e, $w, $root) {
 
 }]);
 

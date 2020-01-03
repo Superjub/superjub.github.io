@@ -41,19 +41,17 @@
 			<h2>Portfolio</h3>
 
 			<div id="portfolio-container" ng-controller="portfolio" ng-cloak>
-				<div class="project" ng-repeat="project in projects">
+				<div ng-controller="project" class="project" ng-repeat="project in projects">
 					<div class="header"><h2>{{project.name}}</h2></div>
-					<div class="body" title="{{project.description}}">
+					<div class="body">
 						<img src="{{project.image_url}}"/>
-					</div>
-					<div class="footer">
-						<button class="btn btn-primary" ng-class="{ disabled : project.download_url === null }" ng-click="download($event, project);">Download</button>
-						<button class="btn btn-secondary">Info</button>
+						<div class="project-desc">
+							<span>{{project.description}}</span>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<p>Alternatively visit <a href="https://github.com/Superjub" target="_blank">https://github.com/Superjub</a> for past projects.</p>
+			<p>Alternatively visit <a href="https://github.com/Superjub" target="_blank">https://github.com/Superjub</a> for past projects. More projects coming soon!</p>
 		</div>
 		<hr />
 
