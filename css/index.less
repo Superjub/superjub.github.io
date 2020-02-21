@@ -21,9 +21,14 @@
                 padding: 10px;
                 opacity: 0.7;
                 transition: opacity 0.5s;
+                &.can-download {
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer !important;
+                    }
+                }
                 &:hover {
-                    opacity: 1;
-                    cursor: pointer;
+                    cursor: not-allowed;
                 }
                 .header {
                     height: 15%;

@@ -236,9 +236,12 @@ footer {
   opacity: 0.7;
   transition: opacity 0.5s;
 }
-.sections #portfolio #portfolio-container .project:hover {
+.sections #portfolio #portfolio-container .project.can-download:hover {
   opacity: 1;
-  cursor: pointer;
+  cursor: pointer !important;
+}
+.sections #portfolio #portfolio-container .project:hover {
+  cursor: not-allowed;
 }
 .sections #portfolio #portfolio-container .project .header {
   height: 15%;
