@@ -41,7 +41,7 @@
 			<h2>Portfolio</h3>
 
 			<div id="portfolio-container" ng-controller="portfolio" ng-cloak>
-				<div ng-controller="project" class="project" ng-repeat="project in projects">
+				<div ng-class="{'can-download' : project.download_url !== null}" ng-controller="project" class="project" ng-repeat="project in projects | orderBy: 'download_url'" ng-click="download(project.download_url)">
 					<div class="header"><h2>{{project.name}}</h2></div>
 					<div class="project-body">
 						<img src="{{project.image_url}}"/>

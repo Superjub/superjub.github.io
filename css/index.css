@@ -229,6 +229,7 @@ footer {
   max-height: 1000px;
   height: auto;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .sections #portfolio #portfolio-container .project {
   border-radius: 20px;
@@ -236,9 +237,12 @@ footer {
   opacity: 0.7;
   transition: opacity 0.5s;
 }
-.sections #portfolio #portfolio-container .project:hover {
+.sections #portfolio #portfolio-container .project.can-download:hover {
   opacity: 1;
-  cursor: pointer;
+  cursor: pointer !important;
+}
+.sections #portfolio #portfolio-container .project:hover {
+  cursor: not-allowed;
 }
 .sections #portfolio #portfolio-container .project .header {
   height: 15%;
@@ -295,6 +299,8 @@ footer {
   #portfolio-container .project {
     height: 200px;
     width: 200px;
+    min-height: 200px;
+    min-width: 200px;
     margin: auto;
   }
   #portfolio-container .project button {
@@ -313,6 +319,8 @@ footer {
   #portfolio-container .project {
     height: 200px;
     width: 200px;
+    min-height: 200px;
+    min-width: 200px;
     margin: auto;
   }
   #portfolio-container .project button {
@@ -331,7 +339,9 @@ footer {
   #portfolio-container .project {
     height: 250px;
     width: 250px;
-    margin: 20px;
+    min-height: 250px;
+    min-width: 250px;
+    margin: 5px;
   }
   #portfolio-container .project button {
     font-size: 14px;
@@ -349,7 +359,9 @@ footer {
   #portfolio-container .project {
     height: 300px;
     width: 300px;
-    margin: 20px;
+    min-height: 300px;
+    min-width: 300px;
+    margin: 10px;
   }
   #portfolio-container .project button {
     font-size: 16px;
@@ -367,6 +379,8 @@ footer {
   #portfolio-container .project {
     height: 300px;
     width: 300px;
+    min-height: 300px;
+    min-width: 300px;
     margin: 20px;
   }
   #portfolio-container .project button {
