@@ -1,0 +1,9 @@
+<div [class.can-download]="project?.download_url !== null" class="project" (click)="download()">
+    <div class="header"><h2>{{project?.name}}</h2></div>
+    <div class="project-body">
+        <img [src]="project?.image_url"/>
+        <div class="project-desc">
+            <span>{{project?.description}}</span>
+        </div>
+    </div>
+</div>

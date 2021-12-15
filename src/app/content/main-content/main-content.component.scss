@@ -1,0 +1,85 @@
+:host {
+    #bio { // bio section
+        margin: 10px 0 20px 0;
+    }
+    #portfolio  {// portfolio section
+        #portfolio-container {
+            display: flex;
+            margin: 0 auto 0 auto;
+            max-height: 1000px;
+            height: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    #contact {
+        .logo-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 300px;
+            margin: auto;
+        }
+    }
+
+    hr {
+        width: 10%;
+        opacity: 0.5;
+    }
+
+    // different resolutions
+    @media only screen and (max-width: 600px) {  /* Extra small devices (phones, 600px and down) */ 
+        #portfolio-container {
+            flex-direction: column;
+        }
+
+        #contact a {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media only screen and (min-width: 600px) { /* Small devices (portrait tablets and large phones, 600px and up) */
+        #portfolio-container {
+            flex-direction: column;
+        }
+
+        #contact a {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) { /* Medium devices (landscape tablets, 768px and up) */
+        #portfolio-container {
+            flex-direction: row;
+        }
+
+        #contact a {
+            width: 42px;
+            height: 42px;
+        }
+    }
+
+    @media only screen and (min-width: 992px) { /* Large devices (laptops/desktops, 992px and up) */
+        #portfolio-container {
+            flex-direction: row;
+        }
+        #contact a {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {  /* Extra large devices (large laptops and desktops, 1200px and up) */
+        #portfolio-container {
+            flex-direction: row;
+        }
+        #contact a {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
