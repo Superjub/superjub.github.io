@@ -1,22 +1,60 @@
 <div id="bio">
     <h2>Bio</h2>
-    <p>Birmingham City University graduate from the United Kingdom with a 2.1 qualification (with honours) in Computer Games Technology. Currently employed at Semantic Audio Labs Ltd.</p>
+    <p>Birmingham City University graduate from the United Kingdom with a 2.1 qualification (with honours) in Computer Games Technology. Currently employed at Autoflow Ltd.</p>
     <p>In my spare time, I like to play video games. Furthermore, when I find free time I like to create games using Unity or fan mods of established video games.</p>
     <p>As of the last three years, my primary focus has been in web development.</p>
-    <p>My main skills include:
-        <li>HTML (5)</li>
-        <li>Angular (both JS and 2+)</li>
-        <li>CSS (as well as LESS, SASS, SCSS)</li>
-        <li>Experience with PHP</li>
-        <li>C#</li>
-        <li>Experience with C++</li>
-    </p>
+    <hr />
+    <div id="bio__skills">
+        <p>My main skills include:</p>
+        <ul>
+            <li>HTML (5)</li>
+            <li>Angular (both JS and 2+) and ReactJS</li>
+            <li>CSS (as well as LESS, SASS, SCSS)</li>
+        </ul>
+        <hr />
+        <p>Other skills include:</p>
+        <ul>
+            <li>Some experience with PHP</li>
+            <li>C#</li>
+            <li>Experience with C++</li>
+        </ul>
+    </div>
+    <hr />
+    <div class="bio__employment-history">
+        <div>
+            <h3>Work History</h3>
+            <hr />
+            <div class="bio__employment-container">
+                <p><strong>January 2022 - Present : Autoflow Ltd - Angular Web Developer</strong></p>
+                <div>
+                    <small>
+                        Duties include working as a team, working on a currently unreleased project relating to car repair - specifically communications between that of the customer and repairer,
+                        adding new content as well as fixing issues.
+                        The key framework used on the project I'm working on is Angular 13.
+                    </small>
+                </div>
+                <a href="https://www.autoflow.ltd.uk/en-gb">Link to company website</a>
+            </div>
+            <div class="bio__employment-container">
+                <p><strong>January 2018 - December 2021: Semantic Audio Labs Ltd - Angular Web Developer</strong></p>
+                <div>
+                    <small>
+                        Key duties include working collaboratively with a small team including designers and developers to create a digital audio workstation - abbreviated as DAW
+                        - known as Faders. 
+                        Originally created using Angular JS, a large scale refactor which I was actively a part of upgraded the source code to that of a more recent version of
+                        angular, eventually using Angular 12.
+                    </small>
+                </div>
+                <a href="http://www.semanticaudio.co.uk/">Link to company website</a>
+            </div>
+        </div>
+    </div>
 </div>
 <hr />
 
 <div id="portfolio">
     <h2>Portfolio</h2>
-    <div id="portfolio-container">
+    <div id="portfolio__container">
         <app-project *ngFor="let project of projects" [project]="project"></app-project>
     </div>
     <p>Alternatively visit <a href="https://github.com/Superjub" target="_blank">https://github.com/Superjub</a> for past projects. More projects coming soon!</p>
@@ -34,7 +72,7 @@
 
     <p>For all busines enquiries, email me at <a href="mailto:bcpick1995@gmail.com">bcpick1995@gmail.com</a></p>
 
-    <div class="logo-container">
+    <div class="contact__logo-container">
         <a class="da-button" href="https://www.deviantart.com/superjub">
             <img src="assets/logos/deviantart-logo.png" style="height: inherit; width: inherit">
         </a>
