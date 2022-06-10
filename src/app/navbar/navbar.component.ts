@@ -13,7 +13,11 @@ export class NavbarComponent implements OnInit {
 	}
 
 	scrollToElement(id: string): void {
-		document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		const element = document.getElementById(id);
+		if (element) {
+			const y = element.offsetTop - 250;
+			window.scroll({ top: y, behavior: 'smooth'});
+		}
 	}
 
 }
