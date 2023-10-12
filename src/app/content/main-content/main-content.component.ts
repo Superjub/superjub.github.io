@@ -15,9 +15,11 @@ export interface Project {
 
 export class MainContentComponent implements OnInit {
 
+	showingIFrame: boolean = false;
+
 	constructor() { }
 
-	public projects: Project[] = [
+	public readonly projects: Project[] = [
 		{   
 			name: "Posession",
 			image_url: 'assets/projects/posession/posession-screenshot.png',
@@ -45,6 +47,10 @@ export class MainContentComponent implements OnInit {
 	];
 
 	ngOnInit(): void {
+	}
+
+	showIFrame(): void {
+		this.showingIFrame = !this.showingIFrame;
 	}
 
 }

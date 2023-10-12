@@ -1,0 +1,9 @@
+{
+    "window.title": "My Website",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#1b8059",
+        "titleBar.activeBackground": "#1b8059",
+        "titleBar.activeForeground": "#FFF",
+        "statusBar.background": "#0f6343"
+    }
+}
